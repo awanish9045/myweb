@@ -127,16 +127,18 @@
     height: 422px;
     justify-content: center;
     align-items: center;
+    position:relative;
+    z-index:-2;
 }
 #home::before{
     content: "";
     background: url(https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzI5fHwlMjNjb2Rpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60) no-repeat center center/cover;
     position: absolute;
-    height: 540px;
+    height:100%;
     top: 0px;
     left: 0px;
     width: 100%;
-    z-index: -1;
+    z-index: -2;
     opacity: 0.89;
 }
 #home h1{
@@ -189,12 +191,13 @@
     display: flex;
     flex-direction: column;
     position:relative;
+    z-index:-2;
 }
 #myprojects::before{
     content: "";
     background: url(https://images.unsplash.com/photo-1585935238141-240f3e5567fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGVjbm9sb2d5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60) no-repeat center center/cover;
     position: absolute;
-    height:75%;
+    height:100%;
     width: 100%;
     z-index: -2;
     opacity: 0.6;
@@ -311,12 +314,7 @@ footer{
    padding: 0px;
 }
 /* my projects  */
-#myprojects{
-      position:static;
-}
-#myprojects::before{
-    height:100%;
-}
+
 .project{
     padding: 20px 10px;
     font-size: 1rem;
