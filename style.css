@@ -42,6 +42,7 @@
 #stick{
     position:sticky;
     top: 0px;
+    z-index:2;
 }
 /* Negavition bar  */
 #navbar{
